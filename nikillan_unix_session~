@@ -1,0 +1,682 @@
+Script started on 2023-11-30 11:37:57+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="148" LINES="35"]
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda --version
+[?2004lconda 23.10.0
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda env list
+[?2004l# conda environments:
+#
+base                  *  /home/nikillan/miniconda3
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda create --name snowflake bip[Kopyto[Khon
+[?2004lChannels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / done
+Solving environment: \ | done
+
+## Package Plan ##
+
+  environment location: /home/nikillan/miniconda3/envs/snowflake
+
+  added / updated specs:
+    - biopython
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  biopython          pkgs/main/linux-64::biopython-1.78-py312h5eee18b_0 
+  blas               pkgs/main/linux-64::blas-1.0-mkl 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.08.22-h06a4308_0 
+  expat              pkgs/main/linux-64::expat-2.5.0-h6a678d5_0 
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2023.1.0-hdb19cb5_46306 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_0 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  mkl                pkgs/main/linux-64::mkl-2023.1.0-h213fc3f_46344 
+  mkl-service        pkgs/main/linux-64::mkl-service-2.4.0-py312h5eee18b_1 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  numpy              pkgs/main/linux-64::numpy-1.26.0-py312hc5e2394_0 
+  numpy-base         pkgs/main/linux-64::numpy-base-1.26.0-py312h0da6c21_0 
+  openssl            pkgs/main/linux-64::openssl-3.0.12-h7f8727e_0 
+  pip                pkgs/main/linux-64::pip-23.3-py312h06a4308_0 
+  python             pkgs/main/linux-64::python-3.12.0-h996f2a0_0 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-68.0.0-py312h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0 
+  tbb                pkgs/main/linux-64::tbb-2021.8.0-hdb19cb5_0 
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0 
+  tzdata             pkgs/main/noarch::tzdata-2023c-h04d1e81_0 
+  wheel              pkgs/main/linux-64::wheel-0.41.2-py312h06a4308_0 
+  xz                 pkgs/main/linux-64::xz-5.4.2-h5eee18b_0 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: - \ done
+Verifying transaction: / - \ | / - \ | / - done
+Executing transaction: | / - \ | done
+#
+# To activate this environment, use
+#
+#     $ conda activate snowflake
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda l[Kenv list
+[?2004l# conda environments:
+#
+base                  *  /home/nikillan/miniconda3
+snowflake                /home/nikillan/miniconda3/envs/snowflake
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda activate snowflake
+[?2004l[?2004h(snowflake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda list
+[?2004l# packages in environment at /home/nikillan/miniconda3/envs/snowflake:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_openmp_mutex             5.1                       1_gnu  
+biopython                 1.78            py312h5eee18b_0  
+blas                      1.0                         mkl  
+bzip2                     1.0.8                h7b6447c_0  
+ca-certificates           2023.08.22           h06a4308_0  
+expat                     2.5.0                h6a678d5_0  
+intel-openmp              2023.1.0         hdb19cb5_46306  
+ld_impl_linux-64          2.38                 h1181459_1  
+libffi                    3.4.4                h6a678d5_0  
+libgcc-ng                 11.2.0               h1234567_1  
+libgomp                   11.2.0               h1234567_1  
+libstdcxx-ng              11.2.0               h1234567_1  
+libuuid                   1.41.5               h5eee18b_0  
+mkl                       2023.1.0         h213fc3f_46344  
+mkl-service               2.4.0           py312h5eee18b_1  
+ncurses                   6.4                  h6a678d5_0  
+numpy                     1.26.0          py312hc5e2394_0  
+numpy-base                1.26.0          py312h0da6c21_0  
+openssl                   3.0.12               h7f8727e_0  
+pip                       23.3            py312h06a4308_0  
+python                    3.12.0               h996f2a0_0  
+readline                  8.2                  h5eee18b_0  
+setuptools                68.0.0          py312h06a4308_0  
+sqlite                    3.41.2               h5eee18b_0  
+tbb                       2021.8.0             hdb19cb5_0  
+tk                        8.6.12               h1ccaba5_0  
+tzdata                    2023c                h04d1e81_0  
+wheel                     0.41.2          py312h06a4308_0  
+xz                        5.4.2                h5eee18b_0  
+zlib                      1.2.13               h5eee18b_0  
+[?2004h(snowflake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda deactivate
+[?2004l[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda create --name snake
+[?2004lChannels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - done
+Solving environment: | done
+
+## Package Plan ##
+
+  environment location: /home/nikillan/miniconda3/envs/snake
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: - done
+Verifying transaction: | done
+Executing transaction: - done
+#
+# To activate this environment, use
+#
+#     $ conda activate snake
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda activate snake
+[?2004l[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda search python
+[?2004lLoading channels: - \ | / done
+# Name                       Version           Build  Channel             
+python                        2.7.13     hac47a24_15  pkgs/main           
+python                        2.7.13     heccc3f1_16  pkgs/main           
+python                        2.7.13     hfff3488_13  pkgs/main           
+python                        2.7.14     h1571d57_29  pkgs/main           
+python                        2.7.14     h1571d57_30  pkgs/main           
+python                        2.7.14     h1571d57_31  pkgs/main           
+python                        2.7.14     h1aa7481_19  pkgs/main           
+python                        2.7.14     h435b27a_18  pkgs/main           
+python                        2.7.14     h89e7a4a_22  pkgs/main           
+python                        2.7.14     h91f54f5_26  pkgs/main           
+python                        2.7.14     h931c8b0_15  pkgs/main           
+python                        2.7.14     h9b67528_20  pkgs/main           
+python                        2.7.14     ha6fc286_23  pkgs/main           
+python                        2.7.14     hc2b0042_21  pkgs/main           
+python                        2.7.14     hdd48546_24  pkgs/main           
+python                        2.7.14     hf918d8d_16  pkgs/main           
+python                        2.7.15      h1571d57_0  pkgs/main           
+python                        2.7.15      h77bded6_1  pkgs/main           
+python                        2.7.15      h77bded6_2  pkgs/main           
+python                        2.7.15      h9bab390_2  pkgs/main           
+python                        2.7.15      h9bab390_4  pkgs/main           
+python                        2.7.15      h9bab390_6  pkgs/main           
+python                        2.7.16      h8b3fad2_1  pkgs/main           
+python                        2.7.16      h8b3fad2_2  pkgs/main           
+python                        2.7.16      h8b3fad2_3  pkgs/main           
+python                        2.7.16      h8b3fad2_4  pkgs/main           
+python                        2.7.16      h8b3fad2_5  pkgs/main           
+python                        2.7.16      h9bab390_0  pkgs/main           
+python                        2.7.16      h9bab390_6  pkgs/main           
+python                        2.7.16      h9bab390_7  pkgs/main           
+python                        2.7.17      h9bab390_0  pkgs/main           
+python                        2.7.18      h02575d3_0  pkgs/main           
+python                        2.7.18      h15b4118_1  pkgs/main           
+python                        2.7.18      h42bf7aa_3  pkgs/main           
+python                        2.7.18      ha1903f6_2  pkgs/main           
+python                         3.5.4     h00c01ad_19  pkgs/main           
+python                         3.5.4     h0b4c808_22  pkgs/main           
+python                         3.5.4     h2170f06_12  pkgs/main           
+python                         3.5.4     h3075507_18  pkgs/main           
+python                         3.5.4     h417fded_24  pkgs/main           
+python                         3.5.4     h56e0582_23  pkgs/main           
+python                         3.5.4     h72f0b78_15  pkgs/main           
+python                         3.5.4     hb43c6bb_21  pkgs/main           
+python                         3.5.4     hc053d89_14  pkgs/main           
+python                         3.5.4     hc3d631a_27  pkgs/main           
+python                         3.5.4     he2c66cf_20  pkgs/main           
+python                         3.5.5      hc3d631a_0  pkgs/main           
+python                         3.5.5      hc3d631a_1  pkgs/main           
+python                         3.5.5      hc3d631a_3  pkgs/main           
+python                         3.5.5      hc3d631a_4  pkgs/main           
+python                         3.5.6      h12debd9_1  pkgs/main           
+python                         3.5.6      hc3d631a_0  pkgs/main           
+python                         3.6.2     h02fb82a_12  pkgs/main           
+python                         3.6.2     h0b30769_14  pkgs/main           
+python                         3.6.2     h33255ae_18  pkgs/main           
+python                         3.6.2     hca45abc_19  pkgs/main           
+python                         3.6.2     hdfe5801_15  pkgs/main           
+python                         3.6.3      h0ef2715_3  pkgs/main           
+python                         3.6.3      h1284df2_4  pkgs/main           
+python                         3.6.3      h6c0c0dc_5  pkgs/main           
+python                         3.6.3      hc9025b9_1  pkgs/main           
+python                         3.6.3      hcad60d5_0  pkgs/main           
+python                         3.6.3      hefd0734_2  pkgs/main           
+python                         3.6.4      hc3d631a_0  pkgs/main           
+python                         3.6.4      hc3d631a_1  pkgs/main           
+python                         3.6.4      hc3d631a_3  pkgs/main           
+python                         3.6.5      hc3d631a_0  pkgs/main           
+python                         3.6.5      hc3d631a_1  pkgs/main           
+python                         3.6.5      hc3d631a_2  pkgs/main           
+python                         3.6.6      h6e4f718_2  pkgs/main           
+python                         3.6.6      hc3d631a_0  pkgs/main           
+python                         3.6.7      h0371630_0  pkgs/main           
+python                         3.6.8      h0371630_0  pkgs/main           
+python                         3.6.9      h265db76_0  pkgs/main           
+python                        3.6.10      h0371630_0  pkgs/main           
+python                        3.6.10      h191fe78_1  pkgs/main           
+python                        3.6.10      h7579374_2  pkgs/main           
+python                        3.6.10      hcf32534_1  pkgs/main           
+python                        3.6.12      hcff3b4d_2  pkgs/main           
+python                        3.6.13      h12debd9_1  pkgs/main           
+python                        3.6.13      hdb3f193_0  pkgs/main           
+python                         3.7.0      h6e4f718_3  pkgs/main           
+python                         3.7.0      hc3d631a_0  pkgs/main           
+python                         3.7.1      h0371630_3  pkgs/main           
+python                         3.7.1      h0371630_7  pkgs/main           
+python                         3.7.2      h0371630_0  pkgs/main           
+python                         3.7.3      h0371630_0  pkgs/main           
+python                         3.7.4      h265db76_0  pkgs/main           
+python                         3.7.4      h265db76_1  pkgs/main           
+python                         3.7.5      h0371630_0  pkgs/main           
+python                         3.7.6      h0371630_2  pkgs/main           
+python                         3.7.7 h191fe78_0_cpython  pkgs/main           
+python                         3.7.7 hcf32534_0_cpython  pkgs/main           
+python                         3.7.7      hcff3b4d_4  pkgs/main           
+python                         3.7.7      hcff3b4d_5  pkgs/main           
+python                         3.7.9      h7579374_0  pkgs/main           
+python                        3.7.10      h12debd9_4  pkgs/main           
+python                        3.7.10      hdb3f193_0  pkgs/main           
+python                        3.7.11      h12debd9_0  pkgs/main           
+python                        3.7.13      h12debd9_0  pkgs/main           
+python                        3.7.13      haa1d7c7_1  pkgs/main           
+python                        3.7.15      h7a1cb2a_1  pkgs/main           
+python                        3.7.15      haa1d7c7_0  pkgs/main           
+python                        3.7.16      h7a1cb2a_0  pkgs/main           
+python                         3.8.0      h0371630_0  pkgs/main           
+python                         3.8.0      h0371630_1  pkgs/main           
+python                         3.8.0      h0371630_2  pkgs/main           
+python                         3.8.1      h0371630_1  pkgs/main           
+python                         3.8.2      h191fe78_0  pkgs/main           
+python                         3.8.2      hcf32534_0  pkgs/main           
+python                         3.8.2     hcff3b4d_13  pkgs/main           
+python                         3.8.2     hcff3b4d_14  pkgs/main           
+python                         3.8.3      hcff3b4d_0  pkgs/main           
+python                         3.8.3      hcff3b4d_2  pkgs/main           
+python                         3.8.5      h7579374_1  pkgs/main           
+python                         3.8.5      hcff3b4d_0  pkgs/main           
+python                         3.8.8      hdb3f193_4  pkgs/main           
+python                         3.8.8      hdb3f193_5  pkgs/main           
+python                        3.8.10      h12debd9_8  pkgs/main           
+python                        3.8.10      hdb3f193_7  pkgs/main           
+python                        3.8.11 h12debd9_0_cpython  pkgs/main           
+python                        3.8.12      h12debd9_0  pkgs/main           
+python                        3.8.13      h12debd9_0  pkgs/main           
+python                        3.8.13      haa1d7c7_1  pkgs/main           
+python                        3.8.15      h3fd9d12_0  pkgs/main           
+python                        3.8.15      h7a1cb2a_2  pkgs/main           
+python                        3.8.16      h7a1cb2a_2  pkgs/main           
+python                        3.8.16      h7a1cb2a_3  pkgs/main           
+python                        3.8.16      h955ad1f_4  pkgs/main           
+python                        3.8.17      h7a1cb2a_0  pkgs/main           
+python                        3.8.17      h955ad1f_0  pkgs/main           
+python                        3.8.18      h7a1cb2a_0  pkgs/main           
+python                        3.8.18      h955ad1f_0  pkgs/main           
+python                         3.9.0      hcff3b4d_1  pkgs/main           
+python                         3.9.0      hdb3f193_2  pkgs/main           
+python                         3.9.1      hdb3f193_2  pkgs/main           
+python                         3.9.2      hdb3f193_0  pkgs/main           
+python                         3.9.4      hdb3f193_0  pkgs/main           
+python                         3.9.5      h12debd9_4  pkgs/main           
+python                         3.9.5      hdb3f193_3  pkgs/main           
+python                         3.9.6      h12debd9_0  pkgs/main           
+python                         3.9.6      h12debd9_1  pkgs/main           
+python                         3.9.7      h12debd9_1  pkgs/main           
+python                        3.9.11      h12debd9_1  pkgs/main           
+python                        3.9.11      h12debd9_2  pkgs/main           
+python                        3.9.12      h12debd9_0  pkgs/main           
+python                        3.9.12      h12debd9_1  pkgs/main           
+python                        3.9.13      haa1d7c7_1  pkgs/main           
+python                        3.9.13      haa1d7c7_2  pkgs/main           
+python                        3.9.15      h7a1cb2a_2  pkgs/main           
+python                        3.9.15      haa1d7c7_0  pkgs/main           
+python                        3.9.16      h7a1cb2a_0  pkgs/main           
+python                        3.9.16      h7a1cb2a_1  pkgs/main           
+python                        3.9.16      h7a1cb2a_2  pkgs/main           
+python                        3.9.16      h955ad1f_3  pkgs/main           
+python                        3.9.17      h7a1cb2a_0  pkgs/main           
+python                        3.9.17      h955ad1f_0  pkgs/main           
+python                        3.9.18      h7a1cb2a_0  pkgs/main           
+python                        3.9.18      h955ad1f_0  pkgs/main           
+python                        3.10.0      h12debd9_0  pkgs/main           
+python                        3.10.0      h12debd9_1  pkgs/main           
+python                        3.10.0      h12debd9_2  pkgs/main           
+python                        3.10.0      h12debd9_4  pkgs/main           
+python                        3.10.0      h12debd9_5  pkgs/main           
+python                        3.10.0      h151d27f_3  pkgs/main           
+python                        3.10.3      h12debd9_5  pkgs/main           
+python                        3.10.4      h12debd9_0  pkgs/main           
+python                        3.10.6      haa1d7c7_0  pkgs/main           
+python                        3.10.6      haa1d7c7_1  pkgs/main           
+python                        3.10.8      h7a1cb2a_1  pkgs/main           
+python                        3.10.8      haa1d7c7_0  pkgs/main           
+python                        3.10.9      h7a1cb2a_0  pkgs/main           
+python                        3.10.9      h7a1cb2a_1  pkgs/main           
+python                        3.10.9      h7a1cb2a_2  pkgs/main           
+python                       3.10.10      h7a1cb2a_2  pkgs/main           
+python                       3.10.11      h7a1cb2a_2  pkgs/main           
+python                       3.10.11      h955ad1f_3  pkgs/main           
+python                       3.10.12      h7a1cb2a_0  pkgs/main           
+python                       3.10.12      h955ad1f_0  pkgs/main           
+python                       3.10.13      h7a1cb2a_0  pkgs/main           
+python                       3.10.13      h955ad1f_0  pkgs/main           
+python                        3.11.0      h7a1cb2a_2  pkgs/main           
+python                        3.11.0      h7a1cb2a_3  pkgs/main           
+python                        3.11.2      h7a1cb2a_0  pkgs/main           
+python                        3.11.3      h7a1cb2a_0  pkgs/main           
+python                        3.11.3      h955ad1f_1  pkgs/main           
+python                        3.11.4      h7a1cb2a_0  pkgs/main           
+python                        3.11.4      h955ad1f_0  pkgs/main           
+python                        3.11.5      h7a1cb2a_0  pkgs/main           
+python                        3.11.5      h955ad1f_0  pkgs/main           
+python                        3.12.0      h996f2a0_0  pkgs/main           
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda install python=3.5
+[?2004lChannels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / done
+Solving environment: \ done
+
+## Package Plan ##
+
+  environment location: /home/nikillan/miniconda3/envs/snake
+
+  added / updated specs:
+    - python=3.5
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.08.22-h06a4308_0 
+  certifi            pkgs/main/noarch::certifi-2020.6.20-pyhd3eb1b0_3 
+  libffi             pkgs/main/linux-64::libffi-3.3-he6710b0_2 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  openssl            pkgs/main/linux-64::openssl-1.1.1w-h7f8727e_0 
+  pip                pkgs/main/linux-64::pip-10.0.1-py35_0 
+  python             pkgs/main/linux-64::python-3.5.6-h12debd9_1 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-40.2.0-py35_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0 
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0 
+  wheel              pkgs/main/noarch::wheel-0.37.1-pyhd3eb1b0_0 
+  xz                 pkgs/main/linux-64::xz-5.4.2-h5eee18b_0 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: / - done
+Verifying transaction: | / - \ | / - \ | done
+Executing transaction: - \ | / - \ done
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda python --version
+[?2004lusage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'python' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'content-trust', 'doctor', 'repoquery', 'env')
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda python --version[K[K[K[K[K[K[K[Kv
+[?2004lusage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'python' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'content-trust', 'doctor', 'repoquery', 'env')
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda python -v[KV
+[?2004lusage: conda [-h] [-v] [--no-plugins] [-V] COMMAND ...
+conda: error: argument COMMAND: invalid choice: 'python' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'content-trust', 'doctor', 'repoquery', 'env')
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ python -version
+[?2004lUnknown option: -e
+usage: python [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ python -version[K[K[K[K[K[K[K-e[Kversion
+[?2004lPython 3.5.6 :: Anaconda, Inc.
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda update pt[Kython
+[?2004lChannels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | / - \ done
+Solving environment: / done
+
+## Package Plan ##
+
+  environment location: /home/nikillan/miniconda3/envs/snake
+
+  added / updated specs:
+    - python
+
+
+The following NEW packages will be INSTALLED:
+
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  tzdata             pkgs/main/noarch::tzdata-2023c-h04d1e81_0 
+
+The following packages will be UPDATED:
+
+  certifi            pkgs/main/noarch::certifi-2020.6.20-p~ --> pkgs/main/linux-64::certifi-2023.11.17-py311h06a4308_0 
+  libffi                                     3.3-he6710b0_2 --> 3.4.4-h6a678d5_0 
+  openssl                                 1.1.1w-h7f8727e_0 --> 3.0.12-h7f8727e_0 
+  pip                                         10.0.1-py35_0 --> 23.3.1-py311h06a4308_0 
+  python                                   3.5.6-h12debd9_1 --> 3.11.5-h955ad1f_0 
+  setuptools                                  40.2.0-py35_0 --> 68.0.0-py311h06a4308_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+
+Preparing transaction: \ done
+Verifying transaction: / - \ | / - \ | done
+Executing transaction: - \ | / - \ done
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ python --version
+[?2004lPython 3.11.5
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda activate
+[?2004l[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda lsit[K[K[K[Klist env
+[?2004l# packages in environment at /home/nikillan/miniconda3:
+#
+# Name                    Version                   Build  Channel
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda env list
+[?2004l# conda environments:
+#
+base                  *  /home/nikillan/miniconda3
+snake                    /home/nikillan/miniconda3/envs/snake
+snowflake                /home/nikillan/miniconda3/envs/snowflake
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda remove --name snake
+[?2004l
+CondaValueError: no package names supplied,
+       try "conda remove -h" for more details
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda deleteremove --name snake all-all-all
+[?2004l
+Remove all packages in environment /home/nikillan/miniconda3/envs/snake:
+
+
+## Package Plan ##
+
+  environment location: /home/nikillan/miniconda3/envs/snake
+
+
+The following packages will be REMOVED:
+
+  _libgcc_mutex-0.1-main
+  _openmp_mutex-5.1-1_gnu
+  bzip2-1.0.8-h7b6447c_0
+  ca-certificates-2023.08.22-h06a4308_0
+  certifi-2023.11.17-py311h06a4308_0
+  ld_impl_linux-64-2.38-h1181459_1
+  libffi-3.4.4-h6a678d5_0
+  libgcc-ng-11.2.0-h1234567_1
+  libgomp-11.2.0-h1234567_1
+  libstdcxx-ng-11.2.0-h1234567_1
+  libuuid-1.41.5-h5eee18b_0
+  ncurses-6.4-h6a678d5_0
+  openssl-3.0.12-h7f8727e_0
+  pip-23.3.1-py311h06a4308_0
+  python-3.11.5-h955ad1f_0
+  readline-8.2-h5eee18b_0
+  setuptools-68.0.0-py311h06a4308_0
+  sqlite-3.41.2-h5eee18b_0
+  tk-8.6.12-h1ccaba5_0
+  tzdata-2023c-h04d1e81_0
+  wheel-0.37.1-pyhd3eb1b0_0
+  xz-5.4.2-h5eee18b_0
+  zlib-1.2.13-h5eee18b_0
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: - done
+Verifying transaction: | done
+Executing transaction: - \ done
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda env list
+[?2004l# conda environments:
+#
+base                  *  /home/nikillan/miniconda3
+snowflake                /home/nikillan/miniconda3/envs/snowflake
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda [K[K[K[K[K[Kexit[K[K[K[Kconda search biopy[K[K[K[Kb[Keautifulsoup4
+[?2004lLoading channels: - \ | / - done
+# Name                       Version           Build  Channel             
+beautifulsoup4                 4.6.0          py27_1  pkgs/main           
+beautifulsoup4                 4.6.0  py27h3f86ba9_1  pkgs/main           
+beautifulsoup4                 4.6.0  py35h442a8c9_1  pkgs/main           
+beautifulsoup4                 4.6.0          py36_1  pkgs/main           
+beautifulsoup4                 4.6.0  py36h49b8c8c_1  pkgs/main           
+beautifulsoup4                 4.6.0          py37_1  pkgs/main           
+beautifulsoup4                 4.6.1          py27_0  pkgs/main           
+beautifulsoup4                 4.6.1          py35_0  pkgs/main           
+beautifulsoup4                 4.6.1          py36_0  pkgs/main           
+beautifulsoup4                 4.6.1          py37_0  pkgs/main           
+beautifulsoup4                 4.6.3          py27_0  pkgs/main           
+beautifulsoup4                 4.6.3          py35_0  pkgs/main           
+beautifulsoup4                 4.6.3          py36_0  pkgs/main           
+beautifulsoup4                 4.6.3          py37_0  pkgs/main           
+beautifulsoup4                 4.7.1          py27_1  pkgs/main           
+beautifulsoup4                 4.7.1          py36_1  pkgs/main           
+beautifulsoup4                 4.7.1          py37_1  pkgs/main           
+beautifulsoup4                 4.8.0          py27_0  pkgs/main           
+beautifulsoup4                 4.8.0          py36_0  pkgs/main           
+beautifulsoup4                 4.8.0          py37_0  pkgs/main           
+beautifulsoup4                 4.8.1          py27_0  pkgs/main           
+beautifulsoup4                 4.8.1          py36_0  pkgs/main           
+beautifulsoup4                 4.8.1          py37_0  pkgs/main           
+beautifulsoup4                 4.8.1          py38_0  pkgs/main           
+beautifulsoup4                 4.8.2          py27_0  pkgs/main           
+beautifulsoup4                 4.8.2          py36_0  pkgs/main           
+beautifulsoup4                 4.8.2          py37_0  pkgs/main           
+beautifulsoup4                 4.8.2          py38_0  pkgs/main           
+beautifulsoup4                 4.9.0          py36_0  pkgs/main           
+beautifulsoup4                 4.9.0          py37_0  pkgs/main           
+beautifulsoup4                 4.9.0          py38_0  pkgs/main           
+beautifulsoup4                 4.9.1          py36_0  pkgs/main           
+beautifulsoup4                 4.9.1  py36h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.1          py37_0  pkgs/main           
+beautifulsoup4                 4.9.1  py37h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.1          py38_0  pkgs/main           
+beautifulsoup4                 4.9.1  py38h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.1  py39h06a4308_0  pkgs/main           
+beautifulsoup4                 4.9.3    pyha847dfd_0  pkgs/main           
+beautifulsoup4                 4.9.3    pyhb0f4dca_0  pkgs/main           
+beautifulsoup4                4.10.0    pyh06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1 py310h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1 py311h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1  py37h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1  py38h06a4308_0  pkgs/main           
+beautifulsoup4                4.11.1  py39h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.0 py310h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.0 py311h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.0  py38h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.0  py39h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.2 py310h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.2 py311h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.2 py312h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.2  py38h06a4308_0  pkgs/main           
+beautifulsoup4                4.12.2  py39h06a4308_0  pkgs/main           
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ cond [Ka create --a[Kname beautifulsoup4sbeautifulsoup4nbeautifulsoup4abeautifulsoup4kbeautifulsoup4ebeautifulsoup4 beautifulsoup4
+[?2004lChannels:
+ - defaults
+Platform: linux-64
+Collecting package metadata (repodata.json): - \ | done
+Solving environment: - done
+
+## Package Plan ##
+
+  environment location: /home/nikillan/miniconda3/envs/snake
+
+  added / updated specs:
+    - beautifulsoup4
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    beautifulsoup4-4.12.2      |  py312h06a4308_0         251 KB
+    soupsieve-2.5              |  py312h06a4308_0          84 KB
+    ------------------------------------------------------------
+                                           Total:         336 KB
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main 
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu 
+  beautifulsoup4     pkgs/main/linux-64::beautifulsoup4-4.12.2-py312h06a4308_0 
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h7b6447c_0 
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2023.08.22-h06a4308_0 
+  expat              pkgs/main/linux-64::expat-2.5.0-h6a678d5_0 
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.38-h1181459_1 
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_0 
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1 
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1 
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1 
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0 
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0 
+  openssl            pkgs/main/linux-64::openssl-3.0.12-h7f8727e_0 
+  pip                pkgs/main/linux-64::pip-23.3-py312h06a4308_0 
+  python             pkgs/main/linux-64::python-3.12.0-h996f2a0_0 
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0 
+  setuptools         pkgs/main/linux-64::setuptools-68.0.0-py312h06a4308_0 
+  soupsieve          pkgs/main/linux-64::soupsieve-2.5-py312h06a4308_0 
+  sqlite             pkgs/main/linux-64::sqlite-3.41.2-h5eee18b_0 
+  tk                 pkgs/main/linux-64::tk-8.6.12-h1ccaba5_0 
+  tzdata             pkgs/main/noarch::tzdata-2023c-h04d1e81_0 
+  wheel              pkgs/main/linux-64::wheel-0.41.2-py312h06a4308_0 
+  xz                 pkgs/main/linux-64::xz-5.4.2-h5eee18b_0 
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_0 
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages:
+soupsieve-2.5        | 84 KB     |                                                                                                           |   0% 
+beautifulsoup4-4.12. | 251 KB    |                                                                                                           |   0% [Asoupsieve-2.5        | 84 KB     | ###################8                                                                                      |  19% 
+beautifulsoup4-4.12. | 251 KB    | ######6                                                                                                   |   6% [Asoupsieve-2.5        | 84 KB     | ######################################################################################################### | 100% 
+beautifulsoup4-4.12. | 251 KB    | ######################################################################################################### | 100% [A                                                                                                                                                    
+                                                                                                                                                    [A
+Preparing transaction: | / done
+Verifying transaction: \ | / - \ | / - \ done
+Executing transaction: / - \ | done
+#
+# To activate this environment, use
+#
+#     $ conda activate snake
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda activate snake
+[?2004l[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda [K[K[K[K[K[Kconda list
+[?2004l# packages in environment at /home/nikillan/miniconda3/envs/snake:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+_openmp_mutex             5.1                       1_gnu  
+beautifulsoup4            4.12.2          py312h06a4308_0  
+bzip2                     1.0.8                h7b6447c_0  
+ca-certificates           2023.08.22           h06a4308_0  
+expat                     2.5.0                h6a678d5_0  
+ld_impl_linux-64          2.38                 h1181459_1  
+libffi                    3.4.4                h6a678d5_0  
+libgcc-ng                 11.2.0               h1234567_1  
+libgomp                   11.2.0               h1234567_1  
+libstdcxx-ng              11.2.0               h1234567_1  
+libuuid                   1.41.5               h5eee18b_0  
+ncurses                   6.4                  h6a678d5_0  
+openssl                   3.0.12               h7f8727e_0  
+pip                       23.3            py312h06a4308_0  
+python                    3.12.0               h996f2a0_0  
+readline                  8.2                  h5eee18b_0  
+setuptools                68.0.0          py312h06a4308_0  
+soupsieve                 2.5             py312h06a4308_0  
+sqlite                    3.41.2               h5eee18b_0  
+tk                        8.6.12               h1ccaba5_0  
+tzdata                    2023c                h04d1e81_0  
+wheel                     0.41.2          py312h06a4308_0  
+xz                        5.4.2                h5eee18b_0  
+zlib                      1.2.13               h5eee18b_0  
+[?2004h(snake) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda deactivate
+[?2004l[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ conda env list
+[?2004l# conda environments:
+#
+base                  *  /home/nikillan/miniconda3
+snake                    /home/nikillan/miniconda3/envs/snake
+snowflake                /home/nikillan/miniconda3/envs/snowflake
+
+[?2004h(base) ]0;nikillan@TIGER01345: ~[01;32mnikillan@TIGER01345[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2023-11-30 11:43:33+05:30 [COMMAND_EXIT_CODE="0"]
